@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import App from './App';
+import {BrowserRouter} from 'react-router-dom';
+import {FavoriteContextProvider} from './store/favorites-context';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  <FavoriteContextProvider>
+      <BrowserRouter>
+          <App />
+      </BrowserRouter>
+  </FavoriteContextProvider>
+  ,
   document.getElementById('root')
 );
 

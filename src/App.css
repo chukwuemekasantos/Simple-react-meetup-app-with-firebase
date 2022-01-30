@@ -1,5 +1,13 @@
+body{
+  background-color: #ccc;
+}
 .App {
   text-align: center;
+}
+
+.navbar{
+ padding-top: 20px;
+ padding-bottom: 20px;
 }
 
 .App-logo {
